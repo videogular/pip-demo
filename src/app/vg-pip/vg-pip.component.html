@@ -1,0 +1,11 @@
+<video #pipRef
+       [vgMedia]="pipRef"
+       [src]="source"
+       id="slaveVideo"
+       preload="auto"
+       playsinline
+       crossorigin
+       (click)="onClickCam()">
+</video>
+
+<vg-mute vgFor="slaveVideo"></vg-mute>

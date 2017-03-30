@@ -1,0 +1,33 @@
+<vg-player>
+    <vg-controls>
+        <vg-play-pause></vg-play-pause>
+        <vg-scrub-bar>
+            <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+        </vg-scrub-bar>
+
+        <vg-mute vgFor="master"></vg-mute>
+        <vg-volume vgFor="master"></vg-volume>
+
+        <vg-fullscreen></vg-fullscreen>
+    </vg-controls>
+
+    <vg-pip *ngIf="selectedCamera"
+            (onCloseCam)="selectedCamera = null"
+            [source]="selectedCamera">
+    </vg-pip>
+
+    <video id="master"
+           #masterRef
+           [vgMedia]="masterRef"
+           [vgMaster]="true"
+           [src]="masterVideo">
+    </video>
+</vg-player>
+
+<ul>
+    <li *ngFor="let camera of cameras">
+        <label>
+            <input type="radio" name="cameraGroup" [value]="camera.source" (change)="onSelectCamera(camera)"> {{ camera.name }}
+        </label>
+    </li>
+</ul>
