@@ -6,16 +6,7 @@ import { Component, Input, ViewChild, Output, EventEmitter, ElementRef } from '@
     styleUrls: [ './vg-pip.component.scss' ]
 })
 export class VgPipComponent {
-    @Input() source: string;
-
-    @Output() onCloseCam: EventEmitter<any> = new EventEmitter();
-
-    @ViewChild('pipRef') media: ElementRef;
 
     constructor() {
-    }
-
-    onClickCam() {
-        this.onCloseCam.next();
     }
 }
