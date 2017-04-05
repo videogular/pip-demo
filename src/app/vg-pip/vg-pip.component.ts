@@ -10,8 +10,6 @@ export class VgPipComponent {
 
     @Output() onCloseCam: EventEmitter<any> = new EventEmitter();
 
-    @ViewChild('pipRef') media: ElementRef;
-
     constructor() {
     }
 
