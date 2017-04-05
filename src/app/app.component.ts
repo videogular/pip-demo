@@ -21,4 +21,6 @@ export class AppComponent {
     ];
 
     constructor() {}
+
+    // vg-p6
 }

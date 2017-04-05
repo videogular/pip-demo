@@ -6,7 +6,10 @@ import { Component, Input, ViewChild, Output, EventEmitter, ElementRef } from '@
     styleUrls: [ './vg-pip.component.scss' ]
 })
 export class VgPipComponent {
+    // vg-p2
 
     constructor() {
     }
+
+    // vg-p4
 }
