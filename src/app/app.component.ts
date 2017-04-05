@@ -21,8 +21,4 @@ export class AppComponent {
     ];
 
     constructor() {}
-
-    onSelectCamera(camera: ICamera) {
-        this.selectedCamera = camera.source;
-    }
 }
